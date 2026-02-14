@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>ControlMax - Servicios</title>
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<header class="cabecera">
+			<div class="logo">
+				<img src="img/logo_empresa.jpg" alt="Logo ControlMax" />
+			</div>
+			<nav class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="servicios.html">Servicios</a>
+				<a href="acerca.html">Acerca</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="reporte.html">Reporte</a>
+			</nav>
+		</header>
+		<main>
+			<section id="catalogo-servicios" class="seccion">
+				<h2>Servicios destacados</h2>
+				<div class="grid-servicios">
+					<article class="servicio-card">
+						<div class="servicio-img">
+							<img
+								src="img/servicio_fumigacion.jpg"
+								alt="Fumigación profesional" />
+						</div>
+						<h3>Fumigación</h3>
+						<p style="text-align: justify">
+							Nuestro servicio de fumigación utiliza métodos de
+							alta penetración (como niebla o gas seco) para
+							tratar infestaciones profundas o en áreas de difícil
+							acceso. Es la solución definitiva para plagas
+							complejas como termitas, chinches de cama o plagas
+							de productos almacenados, garantizando una
+							eliminación completa en toda la estructura.
+						</p>
+					</article>
+					<article class="servicio-card">
+						<div class="servicio-img">
+							<img
+								src="img/servicio_exterminacion.jpg"
+								alt="Exterminación" />
+						</div>
+						<h3>Exterminación</h3>
+						<p style="text-align: justify">
+							Aplicamos tratamientos de choque potentes y
+							localizados para erradicar infestaciones activas de
+							forma inmediata. Nos enfocamos en eliminar la
+							población de plagas existente para devolverte la
+							tranquilidad y el control de tu espacio lo antes
+							posible.
+						</p>
+					</article>
+					<article class="servicio-card">
+						<div class="servicio-img">
+							<img
+								src="img/roedores.jpg"
+								alt="Control de roedores" />
+						</div>
+						<h3>Control de roedores</h3>
+						<p style="text-align: justify">
+							Una solución integral para ratas, ratones y otros
+							roedores. Nuestro plan no solo se enfoca en la
+							eliminación de la población actual, sino también en
+							la prevención a largo plazo, identificando y
+							sellando puntos de entrada para evitar que el
+							problema regrese.
+						</p>
+					</article>
+					<article class="servicio-card">
+						<div class="servicio-img">
+							<img
+								src="img/insectos_comunes.jpg"
+								alt="Plagas comunes" />
+						</div>
+						<h3>Plagas comunes</h3>
+						<p style="text-align: justify">
+							Este servicio está diseñado para el manejo y
+							prevención de los invasores más frecuentes:
+							cucarachas, hormigas, arañas, alacranes, mosquitos y
+							más. Mantenemos tus espacios seguros y libres de
+							molestias mediante tratamientos periódicos y
+							barreras de protección.
+						</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="pie">
+			<p>&copy; <span id="year2"></span> ControlMax.</p>
+		</footer>
+		<script>
+			document.getElementById("year2").textContent =
+				new Date().getFullYear();
+		</script>
+	</body>
+</html>

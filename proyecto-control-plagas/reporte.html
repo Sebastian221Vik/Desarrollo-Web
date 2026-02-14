@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>ControlMax - Reporte</title>
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<header class="cabecera">
+			<div class="logo">
+				<img src="img/logo_empresa.jpg" alt="Logo" />
+			</div>
+			<nav class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="servicios.html">Servicios</a>
+				<a href="acerca.html">Acerca</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="reporte.html">Reporte</a>
+			</nav>
+		</header>
+		<main>
+			<section class="seccion">
+				<h1>Reporte de solicitudes</h1>
+				<p>
+					Esta página mostrará los registros enviados a través del
+					formulario. El archivo PHP
+					<code>php/mostrar_registros.php</code> leerá la tabla
+					<code>citas</code> en MySQL y generará una tabla con los
+					datos (id, nombre, teléfono, email, fecha, hora, servicio,
+					urgencia, mascotas, comentarios, fecha_creacion).
+				</p>
+				<p>Ejemplo de salida (la real tendrá los datos de la base):</p>
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nombre</th>
+							<th>Teléfono</th>
+							<th>Servicio</th>
+							<th>Fecha</th>
+							<th>Hora</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Juan Pérez</td>
+							<td>555-123-4567</td>
+							<td>Fumigación</td>
+							<td>2025-10-20</td>
+							<td>09:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<footer class="pie">&copy; <span id="year5"></span> ControlMax.</footer>
+		<script>
+			document.getElementById("year5").textContent =
+				new Date().getFullYear();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>ControlMax - Inicio</title>
+		<link rel="stylesheet" href="css/estilos.css" />
+		<link rel="stylesheet" href="css/inicio.css" />
+	</head>
+	<body class="inicio">
+		<header class="cabecera">
+			<div class="logo">
+				<img
+					src="img/logo_empresa.jpg"
+					alt="Logo ControlMax"
+					id="logoEmpresa" />
+			</div>
+			<aside id="miembros-equipo">
+				<strong>Integrantes:</strong>
+				<ul>
+					<li>Escobar Flores Daniel</li>
+					<li>Hernández Diaz Sebastián</li>
+					<li>Hernández Hernández Samuel</li>
+				</ul>
+			</aside>
+			<nav class="menu">
+				<a href="index.html">Inicio</a>
+				<a href="servicios.html">Servicios</a>
+				<a href="acerca.html">Acerca</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="reporte.html">Reporte</a>
+			</nav>
+		</header>
+		<main>
+			<section id="hero" class="seccion-hero">
+				<h1>
+					ControlMax - Soluciones profesionales en control de plagas
+				</h1>
+				<p id="descripcion-hero">
+					Protegemos tu hogar y negocio con tratamientos seguros y
+					efectivos.
+				</p>
+				<div class="imagen-hero-contenedor">
+					<img
+						src="img/servicio_exterminacion.jpg"
+						alt="Servicio exterminación"
+						id="imagenPrincipal" />
+				</div>
+				<!-- enlace intra-página (misma página) -->
+				<p>
+					<a href="#servicios" class="boton"
+						>Ver servicios destacados ↓</a
+					>
+				</p>
+				<div class="controles-js">
+					<button type="button" onclick="alternarImagen()">
+						Cambiar imagen
+					</button>
+					<button type="button" onclick="cambiarTamParrafo()">
+						Aumentar/Disminuir descripción
+					</button>
+				</div>
+			</section>
+			<section id="servicios" class="seccion">
+				<h2>Servicios</h2>
+				<ul class="lista-servicios">
+					<li><a href="servicios.html#fumigacion">Fumigación</a></li>
+					<li>
+						<a href="servicios.html#exterminacion">Exterminación</a>
+					</li>
+				</ul>
+				<div class="galeria-mini">
+					<div class="servicio-mini">
+						<img
+							src="img/servicio_fumigacion.jpg"
+							alt="Fumigación" />
+						<p>Fumigación</p>
+					</div>
+					<div class="servicio-mini">
+						<img
+							src="img/servicio_exterminacion.jpg"
+							alt="Exterminación" />
+						<p>Exterminación</p>
+					</div>
+				</div>
+			</section>
+			<section id="beneficios" class="seccion">
+				<h2>¿Por qué elegirnos?</h2>
+				<ol>
+					<li>
+						<strong>Tratamientos certificados y seguros.</strong>
+					</li>
+					<p style="text-align: justify">
+						Tu bienestar es nuestra prioridad. Utilizamos
+						exclusivamente productos de última generación aprobados
+						y certificados, aplicando métodos 100% seguros para tu
+						familia, mascotas y el medio ambiente.
+					</p>
+					<li>
+						<strong
+							>Técnicos con uniforme y equipo profesional.</strong
+						>
+					</li>
+					<p style="text-align: justify">
+						Nuestro equipo no solo es experto, sino también
+						confiable. Todos nuestros técnicos están debidamente
+						uniformados, identificados y equipados con la tecnología
+						más avanzada para garantizar un diagnóstico preciso y un
+						servicio impecable.
+					</p>
+					<li>
+						<strong>Planes de mantenimiento y garantía.</strong>
+					</li>
+					<p style="text-align: justify">
+						No solo eliminamos la plaga, nos aseguramos de que no
+						regrese. Respaldamos cada servicio con una sólida
+						garantía por escrito y ofrecemos planes de mantenimiento
+						preventivo diseñados a tu medida para una protección
+						continua.
+					</p>
+					<div class="testimonio">
+						<img
+							src="img/cliente_satisfecho.jpg"
+							alt="Cliente satisfecho estrechando la mano" />
+						<blockquote>
+							"El servicio fue rápido y muy profesional." — Ana G.
+						</blockquote>
+					</div>
+				</ol>
+			</section>
+			<section id="productos" class="seccion">
+				<h3>Productos recomendados</h3>
+				<p>
+					Protege a tu familia de las molestas picaduras. Este
+					repelente de fórmula avanzada ofrece horas de protección
+					eficaz, es ligero y seguro para la piel. Es el complemento
+					ideal para mantener a los mosquitos alejados entre nuestros
+					servicios programados.
+				</p>
+				<a
+					href="https://www.amazon.com/-/es/Repelente-mosquitos-para-patio-libre/dp/B0FSL3N82Q?ref_=Oct_d_onr_d_553844_2"
+					target="_blank"
+					rel="noopener noreferrer">
+					<img
+						src="img/producto_control.jpg"
+						alt="Producto de control de plagas para mosquitos"
+						class="imagen-producto" />
+					<p>Kit repelente para mosquitos</p>
+				</a>
+			</section>
+			<section id="contacto-rapido" class="seccion">
+				<h2>Contacto rápido</h2>
+				<p>
+					Si necesitas una visita rápida,
+					<a href="contacto.html">solicita una cita aquí</a>.
+				</p>
+			</section>
+		</main>
+		<footer class="pie">
+			<p>
+				&copy; <span id="year"></span> ControlMax. Todos los derechos
+				reservados.
+			</p>
+		</footer>
+		<script src="js/main.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,273 @@
+body {
+	font-family: "Helvetica Neue", Arial;
+	line-height: 1.5;
+	color: #222;
+	background: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+header.cabecera {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #0b4f2f;
+	color: #fff;
+	padding: 12px 20px;
+}
+header .logo img {
+	height: 50px;
+	width: auto;
+}
+
+.menu a {
+	color: #fff;
+	margin-left: 14px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a[role="button"],
+.boton,
+button {
+	background: #f47c3c;
+	color: #fff;
+	padding: 8px 12px;
+	border-radius: 6px;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer.pie {
+	text-align: center;
+	padding: 18px;
+	background: #eaeaea;
+	margin-top: 20px;
+}
+
+.lista-servicios li {
+	margin-bottom: 6px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 900px;
+}
+table th,
+table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.imagen-hero-contenedor img,
+.galeria-mini img,
+.seccion img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+#miembros-equipo {
+	position: absolute;
+	top: 90px;
+	left: 12px;
+	background: rgba(255, 255, 255, 0.95);
+	color: #0b4f2f;
+	padding: 8px 10px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+form label {
+	display: block;
+	margin-top: 10px;
+	font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+	width: 100%;
+	max-width: 480px;
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+}
+
+.seccion {
+	padding: 22px;
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 16px;
+	border-radius: 10px;
+}
+
+a:hover {
+	opacity: 0.9;
+}
+
+.galeria-mini {
+	display: flex;
+	gap: 8px;
+}
+.galeria-mini img {
+	width: calc(33.333% - 6px);
+	height: 120px;
+	object-fit: cover;
+}
+
+@media (max-width: 700px) {
+	header.cabecera {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.galeria-mini img {
+		height: 90px;
+	}
+	#miembros-equipo {
+		position: static;
+		margin-top: 10px;
+	}
+}
+
+.grid-servicios {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 18px;
+	align-items: start;
+	margin-top: 16px;
+}
+
+.servicio-card {
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 100%;
+}
+
+.servicio-img {
+	width: 100%;
+	height: 180px;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f2f2f2;
+}
+
+.servicio-img img {
+	width: auto;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.servicio-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+*/ .servicio-card h3 {
+	margin: 0;
+	color: #0b4f2f;
+	font-size: 18px;
+}
+.servicio-card p {
+	margin: 0;
+	color: #444;
+	font-size: 14px;
+}
+
+@media (max-width: 480px) {
+	.servicio-img {
+		height: 140px;
+	}
+}
+
+.lista-servicios {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin: 10px 0 20px 0;
+	padding: 0;
+}
+
+.lista-servicios a {
+	text-decoration: none;
+	color: #0b4f2f;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.lista-servicios a:hover {
+	color: #137f4a;
+}
+
+.galeria-mini {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.servicio-mini {
+	text-align: center;
+	width: 250px;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	padding-bottom: 10px;
+	transition: transform 0.3s ease;
+}
+
+.servicio-mini:hover {
+	transform: translateY(-4px);
+}
+
+.servicio-mini img {
+	width: 100%;
+	height: 180px;
+	object-fit: contain;
+	background-color: #f5f5f5;
+	display: block;
+}
+
+.servicio-mini p {
+	margin-top: 8px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0b4f2f;
+}
+
+@media (max-width: 480px) {
+	.servicio-mini {
+		width: 90%;
+	}
+	.servicio-mini img {
+		height: 150px;
+	}
+}
+
+.imagen-producto {
+	width: 250px;
+	height: auto;
+	display: block;
+	margin: 10px;
+	border-radius: 10px;
+	object-fit: contain;
+}
